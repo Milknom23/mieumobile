@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>น้องมิ้วโมบาย</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ร้านน้องมิ้วโมบาย</h1>
+    <div class="products">
+      <div class="product">
+        <img src="samsung.jpg" alt="Samsung" />
+        <p>Samsung</p>
+        <button class="add-cart" data-name="Samsung">ใส่ตะกร้า</button>
+      </div>
+      <div class="product">
+        <img src="honor.jpg" alt="Honor" />
+        <p>Honor</p>
+        <button class="add-cart" data-name="Honor">ใส่ตะกร้า</button>
+      </div>
+      <div class="product">
+        <img src="iphone.jpg" alt="iPhone" />
+        <p>iPhone</p>
+        <button class="add-cart" data-name="iPhone">ใส่ตะกร้า</button>
+      </div>
+    </div>
+
+    <!-- popup ใส่ตะกร้า -->
+    <div id="cartPopup" class="popup hidden">
+      <div class="popup-content">
+        <p>เพิ่มสินค้าเรียบร้อย!</p>
+        <button id="popupConfirm">ตกลง</button>
+      </div>
+    </div>
+
+    <!-- popup จีบ -->
+    <div id="loverPopup" class="popup hidden">
+      <div class="popup-content">
+        <p>เธอรักเค้าไหม?</p>
+        <button id="yesLove">รักสิ</button>
+        <button id="noLove">ไม่รัก</button>
+      </div>
+    </div>
+
+    <!-- popup ข้อความตอบ -->
+    <div id="answerPopup" class="popup hidden">
+      <div class="popup-content">
+        <p id="answerText"></p>
+        <button id="answerOk">ตกลง</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
